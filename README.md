@@ -14,6 +14,10 @@ Progress is tracked in the seeders table. so that the seeder is only run once.
 composer require florowebdevelopment/seeders
 ```
 
+```php
+php artisan migrate
+```
+
 ## Usage
 
 ### Create a new seeder and fill it manually.
