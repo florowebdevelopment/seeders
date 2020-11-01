@@ -83,7 +83,7 @@ Created Seeder: */database/seeders/YYYY_MM_DD_XXXXXX_my_table.json*:
 }
 ```
 
-## Running Seeders
+### Running Seeders
 
 The pending seeders are executed with the command below:
 
@@ -98,7 +98,10 @@ Check seeder: YYYY_MM_DD_XXXXXX_my_table
 [OK] Table "my_table" exists.
 [OK] Columns "id, name" exists.
 ```
+***Created At***
+
+If the table has a ***created_at*** column, but this is missing from the seeder, the current time is filled in.
 
 ***Update Or Insert***
 
-If the id column exists in the seeder, the [updateOrInsert](https://laravel.com/docs/8.x/queries#update-or-insert) method is used, otherwise the [insert](https://laravel.com/docs/8.x/queries#inserts) method.
+If the ***id*** column exists in the seeder, the [updateOrInsert](https://laravel.com/docs/8.x/queries#update-or-insert) method is used, otherwise the [insert](https://laravel.com/docs/8.x/queries#inserts) method.
