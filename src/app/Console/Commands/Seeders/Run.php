@@ -284,7 +284,8 @@ class Run extends Command
     {
         DB::table('seeders')->insert([
             'seeder' => $seeder,
-            'batch' => $batch
+            'batch' => $batch,
+            'created_at' => now()
         ]);
     }
 
