@@ -1,0 +1,28 @@
+{
+    "name": "florowebdevelopment/seeders",
+    "description": "Seeders",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Floro Webdevelopment",
+            "email": "info@floro.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Florowebdevelopment\\Seeders\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Florowebdevelopment\\Seeders\\ServiceProvider"
+            ]
+        }
+    }
+}
