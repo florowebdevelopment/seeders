@@ -359,6 +359,15 @@ class Run extends Command
         $insert = 0;
 
         foreach ($records['RECORDS'] as $aRecord) {
+            // Created At
+            
+            if ( ! array_key_exists('created_at', $aRecord)
+            && Schema::hasColumn($table, 'created_at')) {
+                $aRecord['created_at'] = now();
+            }
+            
+            // Update Or Insert
+            
             if (Arr::exists($aRecord,'id')) {
                 $updateOrInsert += DB::table($table)->updateOrInsert(
                     [
