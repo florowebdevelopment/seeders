@@ -19,6 +19,10 @@
         }
     },
     "extra": {
+        "deprecation": {
+            "message": "This package is deprecated and will not be maintained.",
+            "since": "1.2"
+        },
         "laravel": {
             "providers": [
                 "Florowebdevelopment\\Seeders\\ServiceProvider"
