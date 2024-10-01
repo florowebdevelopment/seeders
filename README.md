@@ -1,3 +1,6 @@
+# Deprecated
+This package is deprecated and will not be maintained.
+
 # Seeders
 
 <a href="https://packagist.org/packages/florowebdevelopment/seeders"><img src="https://poser.pugx.org/florowebdevelopment/seeders/d/total.svg" alt="Total Downloads"></a>
